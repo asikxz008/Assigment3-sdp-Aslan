@@ -5,3 +5,4 @@ src/com/aitu/sdp/Square.java
 src/com/aitu/sdp/Renderer.java
 src/com/aitu/sdp/VectorRenderer.java
 src/com/aitu/sdp/RasterRenderer.java
+src/com/aitu/sdp/AsciiRenderer.java

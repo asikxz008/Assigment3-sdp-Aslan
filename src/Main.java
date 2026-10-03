@@ -1,3 +1,4 @@
+import com.aitu.sdp.AsciiRenderer;
 import com.aitu.sdp.Circle;
 import com.aitu.sdp.RasterRenderer;
 import com.aitu.sdp.Shape;
@@ -21,8 +22,12 @@ public final class Main {
         passed += checkResult("T4", new Square("square-1", 3, new RasterRenderer()),
                 "RasterRenderer", "RASTER square side=3");
         passed += checkRuntimeSwitch();
+        passed += checkResult("T6", new Circle("circle-1", 2, new AsciiRenderer()),
+                "AsciiRenderer", "ASCII circle radius=2");
+        passed += checkResult("T7", new Square("square-1", 3, new AsciiRenderer()),
+                "AsciiRenderer", "ASCII square side=3");
 
-        int total = 5;
+        int total = 7;
         System.out.println("SUMMARY: " + passed + "/" + total + " PASS");
         if (passed != total) {
             System.exit(1);
